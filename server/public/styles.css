@@ -8,6 +8,14 @@ body {
   margin: 0 !important;
 }
 
+.a-github {
+  color: black;
+}
+
+.a-linkedin {
+  color: #0961b8;
+}
+
 .gray-square {
   margin: none !important;
   display: block;
@@ -62,6 +70,12 @@ body {
   animation-fill-mode: forwards !important;
 }
 
+.fade-in {
+  animation-duration: 6s;
+  animation-name: fade-in;
+  animation-fill-mode: forwards !important;
+}
+
 .expand {
   animation-duration: 3s;
   animation-name: expand;
@@ -113,6 +127,16 @@ button {
 
   to {
     opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
