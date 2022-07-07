@@ -83,11 +83,11 @@ body {
 }
 
 .x {
-  animation: x 4s linear infinite alternate;
+  animation: x 6s linear infinite alternate;
 }
 
 .y {
-  animation: y 1s linear infinite alternate;
+  animation: y 6s linear infinite alternate;
 }
 
 button {
