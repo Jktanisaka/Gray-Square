@@ -64,8 +64,12 @@ body {
   min-width: 100vh !important;
 }
 
+.replay {
+  font-size: 36px !important;
+}
+
 .fade-out {
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: fade-out;
   animation-fill-mode: forwards !important;
 }
@@ -110,13 +114,13 @@ button {
 
 @keyframes y {
   100% {
-    transform: translateY(calc(100vh - 100px));
+    transform: translateY(calc(100vh - 187px));
   }
 }
 
 @keyframes y {
   100% {
-    transform: translateY(calc(100vh - 100px));
+    transform: translateY(calc(100vh - 187px));
   }
 }
 
