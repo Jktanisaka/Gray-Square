@@ -4,8 +4,8 @@ import { Toast } from 'react-bootstrap';
 export default function Level4(props) {
 
   return (
-    <>
-      <Toast>
+    <div className='position-relative'>
+      <Toast className='position-absolute' style={{ top: 0, left: 0 }}>
         <Toast.Header>
           <img src="../server/public/graysquare.png" className="rounded me-2" alt="" />
           <strong className="me-auto">Gray Square</strong>
@@ -18,6 +18,6 @@ export default function Level4(props) {
         <Link style={{ height: 100, width: 100 }} className="gray-square m-5" to="/level5" />
       </div>
     </div>
-    </>
+    </div>
   );
 }
