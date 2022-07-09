@@ -11,12 +11,24 @@ export default class App extends React.Component {
     super(props);
     this.componentDidMount = this.componentDidMount.bind(this);
     this.stopTimer = this.stopTimer.bind(this);
+    this.rerender = this.rerender.bind(this);
     this.state = {
-      timer: 0
+      timer: 0,
+      rerender: false
     };
   }
 
   componentDidMount(props) {
+    const intervalID = setInterval(() => {
+      this.setState({
+        timer: this.state.timer + 1,
+        intervalID
+      });
+    }, 10);
+  }
+
+  rerender() {
+    this.setState({ timer: 0 });
     const intervalID = setInterval(() => {
       this.setState({
         timer: this.state.timer + 1,
@@ -37,7 +49,7 @@ export default class App extends React.Component {
           <Route path="/level2" element={<Level2 />} />
           <Route path="/level3" element={<Level3 />} />
           <Route path="/level4" element={<Level4 />} />
-          <Route path="/level5" element={<Level5 stopTimer={this.stopTimer} timer={this.state.timer}/>} />
+          <Route path="/level5" element={<Level5 stopTimer={this.stopTimer} timer={this.state.timer} rerender={this.rerender}/>} />
         </Switch>
       </Router>
     );
