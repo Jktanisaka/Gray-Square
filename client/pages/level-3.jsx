@@ -14,7 +14,7 @@ export default function Level3(props) {
         return {
           passed: true,
           topDimension: Math.random() * 500,
-          leftDimension: Math.random() * 1500
+          leftDimension: Math.random() * 1000
         };
       default:
         return state;
