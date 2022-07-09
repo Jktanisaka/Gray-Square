@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Toast } from 'react-bootstrap';
 export default function Level5(props) {
   const [passed, setPassed] = useState(false);
   const increment = () => {
@@ -23,9 +23,19 @@ export default function Level5(props) {
     );
   }
   return (
+      <div className='position-relative'>
+        <Toast className='position-absolute' style={{ top: 0, left: 0 }}>
+          <Toast.Header>
+            <img src="graysquare.png" className="rounded me-2 toast-img" alt="" />
+            <strong className="me-auto">Gray Square</strong>
+            <small>Level 5</small>
+          </Toast.Header>
+          <Toast.Body>Thanks for Playing!</Toast.Body>
+        </Toast>
   <div className="container-fluid p-0">
     <div className='row justify-content-center align-items-center full-height m-0 p-0'>
       <button className= "l5-button" onClick={increment}></button>
     </div>
+  </div>
   </div>);
 }

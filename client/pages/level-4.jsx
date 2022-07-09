@@ -7,7 +7,7 @@ export default function Level4(props) {
     <div className='position-relative'>
       <Toast className='position-absolute' style={{ top: 0, left: 0 }}>
         <Toast.Header>
-          <img src="../server/public/graysquare.png" className="rounded me-2" alt="" />
+          <img src="graysquare.png" className="rounded me-2 toast-img" alt="" />
           <strong className="me-auto">Gray Square</strong>
           <small>Level 4</small>
         </Toast.Header>
