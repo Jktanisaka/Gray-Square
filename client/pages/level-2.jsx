@@ -30,7 +30,7 @@ export default function Level2(props) {
       <>
       <Toast>
       <Toast.Header>
-        <img src="../server/public/graysquare.png" className="rounded me-2" alt="" />
+        <img src="graysquare.png" className="rounded me-2 toast-img" alt="" />
         <strong className="me-auto">Gray Square</strong>
         <small>Level 2</small>
       </Toast.Header>
@@ -47,7 +47,7 @@ export default function Level2(props) {
   <>
     <Toast>
       <Toast.Header>
-        <img src="../server/public/graysquare.png" className="rounded me-2" alt="" />
+        <img src="graysquare.png" className="rounded me-2 toast-img" alt="" />
         <strong className="me-auto">Gray Square</strong>
         <small>Level 2</small>
       </Toast.Header>

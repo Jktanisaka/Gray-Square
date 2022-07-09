@@ -16,6 +16,11 @@ body {
   color: #0961b8;
 }
 
+.toast-img {
+  height: 30px;
+  width: 30px;
+}
+
 .gray-square {
   margin: none !important;
   display: block;
