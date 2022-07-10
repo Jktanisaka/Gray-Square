@@ -30,6 +30,10 @@ body {
   border: 2px solid black;
 }
 
+.btn-close {
+  display: none !important;
+}
+
 .l5-button {
   cursor: pointer;
   border: 2px solid black;
