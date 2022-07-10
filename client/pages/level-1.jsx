@@ -15,7 +15,7 @@ export default function Level1(Props) {
         <strong className="me-auto">Gray Square</strong>
         <small>Level 1</small>
       </Toast.Header>
-      <Toast.Body>Hi!, I&apos;m a Gray Square! Can you click me?</Toast.Body>
+      <Toast.Body>Hi! I&apos;m a Gray Square! Can you click me?</Toast.Body>
     </Toast>
     <div className="x">
       <div className='y'>
