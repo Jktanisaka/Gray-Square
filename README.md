@@ -1,6 +1,6 @@
 # Gray Square
 
-live: https://gray-square.herokuapp.com/level5
+live: https://gray-square.herokuapp.com
 
 ## Description
 
